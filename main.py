@@ -12,12 +12,7 @@ colors = [(131, 166, 205), (222, 148, 106), (31, 42, 61), (199, 134, 147), (165,
 
 def draw_circle():
     color = choice(colors)
-    t.color(color, color)
-    t.pendown()
-    t.begin_fill()
-    t.circle(5)
-    t.end_fill()
-    t.penup()
+    t.dot(10, color)
 
 
 def draw_line():
@@ -28,6 +23,7 @@ def draw_line():
 
 colormode(255)
 t = Turtle()
+t.hideturtle()
 t.speed("fastest")
 t.penup()
 t.setposition(-200.0, -200.0)
